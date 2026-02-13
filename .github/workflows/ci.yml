@@ -1,0 +1,25 @@
+name: CI Pipeline #This is pipeline name.
+
+on: # on: push When someone pushes code → run pipeline.
+  push:
+    branches: #Only run when push to main branch.
+      - main
+
+jobs: #A job is like a task.
+  build:
+    runs-on: ubuntu-latest #GitHub creates temporary Linux machine.Your project runs there.
+
+    steps:
+      - name: Checkout Code # This pulls your GitHub code into virtual machine.
+        uses: actions/checkout@v3
+
+      - name: Setup Node #Installs Node.js in that machine.
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22 #Specify Node.js version. You can change it to your project's version.Install Node version 22.
+
+      - name: Install Dependencies
+        run: npm install #Installs dependencies.
+
+      - name: Build Project
+        run: npm run build #Runs your build command.
