@@ -1,0 +1,39 @@
+services:
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "9093:9093"
+
+    environment:
+
+      # Unique id of this broker
+      KAFKA_BROKER_ID: 1
+
+      # Enable KRaft mode (NO Zookeeper)
+      KAFKA_PROCESS_ROLES: broker,controller
+
+      # Unique id for controller
+      KAFKA_NODE_ID: 1
+
+      # Controller quorum (who controls metadata)
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+
+      # Listeners
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,CONTROLLER://0.0.0.0:9093
+
+      # Public address
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+
+      # Map listener names
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+
+      # Which listener is controller
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+
+      # Cluster id (required for KRaft)
+      KAFKA_CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+
+      # Single broker setup
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1

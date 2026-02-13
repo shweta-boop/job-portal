@@ -1,0 +1,7 @@
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^&folderPath=/varrate^&filename=C_VAR1_29012026_1.DAT|.\Common\C_VAR1_29012026_1.DAT
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^&folderPath=/clearing^&filename=NCL_APPLICABLE_SYMBOL_28012026.csv|.\Common\NCL_APPLICABLE_SYMBOL_28012026.csv
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^&folderPath=/clearing^&filename=NCL_APPLICABLE_SYMBOL_29012026.csv|.\Common\NCL_APPLICABLE_SYMBOL_29012026.csv
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^^^&folderPath=/ntneat^^^&filename=nnf_security.gz|.\Common\nnf_security.gz
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^^^&folderPath=/nteat^^^&filename=contract.gz|.\Common\contract.gz
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^&folderPath=/clearing^&filename=BSE_Scrip_Series_Mapping_28012026.csv|.\Common\BSE_Scrip_Series_Mapping_28012026.csv
+http://127.0.0.1:3001/sample-node/63MT/v1/extranet/contentfiledownload?segment=CM^&folderPath=/bhavcopy^&filename=BhavCopy_NSE_CM_0_0_0_20260128_F_0000.csv.zip|.\Common\BhavCopy_NSE_CM_0_0_0_20260128_F_0000.csv.zip

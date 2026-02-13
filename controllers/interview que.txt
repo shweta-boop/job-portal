@@ -1,0 +1,51 @@
+interview que
+✔ Async communication
+✔ Loose coupling
+✔ High throughput
+✔ Fault tolerant
+✔ Event driven system
+==== kafka interview question==
+Q: Why Kafka?
+Async processing, decoupled services, high throughput
+Q: Partition?
+Parallel consumption
+Q: What is consumer group?
+Group of consumers where Kafka ensures each message is processed by only one consumer.Load balancing.
+Q: clientId?' 
+Identifier of application connecting to Kafka.
+que: groupId?
+One message → only ONE consumer in group gets it
+Q: How client finds server?
+Using broker list provided in config.
+Q: Offset?
+Last read message
+Q: Why KRaft?
+Answer: KRaft removes dependency on Zookeeper
+It improves:
+Scalability
+Metadata management
+Stability
+New Kafka versions support native controller
+Q: What is consumer group?
+Group of consumers where Kafka ensures each message is processed by only one consumer.
+que:Why topic?
+Kafka works like:
+Producer → Topic → Consumer
+Topic = message channel
+que:WHY Consumer?
+Producer only sends
+Consumer does:,email service,analytics,notification,logs
+
+
+==docker interview question
+que : Why docker-compose?
+Answer : To run multiple services together
+Kafka + Zookeeper need to communicate
+que:What is a Docker image?
+ans:Docker Image = Ready-made software package
+It contains:
+Operating system (lightweight)
+Kafka
+Required libraries
+Pre-configuration
+So image = template
