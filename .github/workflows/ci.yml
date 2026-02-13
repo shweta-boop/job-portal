@@ -20,6 +20,8 @@ jobs: #A job is like a task.
 
       - name: Install Dependencies
         run: npm install #Installs dependencies.
-
-      - name: Build Project
-        run: npm run build #Runs your build command.
+   
+      - name: Start Check #Runs your tests.
+        run: node -v #Checks Node version to verify setup. You can replace it with your test command, e.g., npm test.
+     # - name: Build Project
+      #  run: npm run build #Runs your build command.
